@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BMI Calculator</title>
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
   <main>
@@ -12,17 +16,18 @@
     <section>
       <h3>Enter your weight and height below to check your BMI results</h3>
 
-      <form action="">
+      <form action="" id="input-form">
         <label for="input-kg">Put your weight in here (KG)</label>
-        <input type="number" id="input-kg">
+        <input type="number" id="input-kg" />
         <label for="input-cm">And your height in here (CM)</label>
-        <input type="number" id="input-cm">
+        <input type="number" id="input-cm" />
         <button id="submit">Calculate BMI</button>
       </form>
 
-      <div id="info-detail">
-        <p>Your BMI is <!-- 21.5 --> which means You are <!-- Normal --></p>
-      </div>
+      <!-- <div id="results-detail">
+        <p>Your BMI is <span class="result-bmi"></span> which means You are <span class="result-categories"></span></p>
+      </div> -->
+
     </section>
   </main>
 </body>
