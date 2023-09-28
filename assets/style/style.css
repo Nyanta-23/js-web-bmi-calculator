@@ -1,32 +1,38 @@
+:root {
+  --base-font-color-black: #222;
+  --base-font-color-white: #FFF;
+  --border-input-color: #2A323C;
+  --border-input-focus-color: #242B33;
+  --button-color: #641AE6;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: #222;
-  font-size: 1rem;
+  color: var(--base-font-color-black);
+  font-size: 0.8rem;
   display: flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 main {
-  margin-top: 100px;
+  margin-top: 30px;
   text-align: center;
-  height: 400px;
   border-radius: 5px;
 }
 
 main h1 {
-  margin: 40px 0 30px;
+  margin: 20px 0 30px;
 }
 
 section {
   text-align: left;
-  width: 50vw;
   padding: 0 50px 0;
 }
 
@@ -42,14 +48,15 @@ section form {
 form input {
   margin-top: 5px;
   width: 100%;
-  padding: 3px;
-  font-size: 20px;
-  border: 1px solid #000;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--border-input-color);
   border-radius: 5px;
 }
 
 form input:focus {
-  border: none;
+  border: 1px solid var(--border-input-focus-color);
+  outline: 1px solid var(--border-input-color);
 }
 
 form label {
@@ -58,4 +65,26 @@ form label {
 
 form button {
   margin-top: 20px;
+}
+
+#submit {
+  background-color: var(--button-color);
+  border: 1px solid transparent;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--base-font-color-white);
+  border-radius: 5px;
+}
+
+h4 {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+#results-detail {
+  display: inline;
+  font-weight: 400;
 }
