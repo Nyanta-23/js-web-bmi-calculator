@@ -90,6 +90,14 @@ h4 {
 }
 
 #results-detail {
-  display: inline;
+  display: none;
   font-weight: 400;
+}
+
+.result-bmi {
+  font-weight: bold;
+}
+
+.result-categories {
+  font-weight: bold;
 }
