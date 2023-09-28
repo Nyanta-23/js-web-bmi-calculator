@@ -38,6 +38,7 @@ section {
 
 section h3 {
   padding: 0 0 30px;
+  font-size: 0.9rem;
 }
 
 section form {
@@ -75,6 +76,7 @@ form button {
   font-weight: bold;
   color: var(--base-font-color-white);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 h4 {
