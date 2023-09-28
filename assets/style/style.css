@@ -1,7 +1,8 @@
 :root {
   --base-font-color-black: #222;
   --base-font-color-white: #FFF;
-  --border-input-color: #2A323C;
+  --base-input-font-color: #2A323C;
+  --border-input-color: #A6ADBA;
   --border-input-focus-color: #242B33;
   --button-color: #641AE6;
 }
@@ -51,12 +52,13 @@ form input {
   width: 100%;
   padding: 10px;
   font-size: 1rem;
+  color: var(--base-input-font-color);
   border: 1px solid var(--border-input-color);
   border-radius: 5px;
 }
 
 form input:focus {
-  border: 1px solid var(--border-input-focus-color);
+  border: 1px solid var(--border-input-color);
   outline: 1px solid var(--border-input-color);
 }
 
