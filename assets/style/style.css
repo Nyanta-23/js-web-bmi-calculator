@@ -34,7 +34,7 @@ main h1 {
 
 section {
   text-align: left;
-  padding: 0 50px 0;
+  padding: 0 50px 80px;
 }
 
 section h3 {
@@ -100,4 +100,25 @@ h4 {
 
 .result-categories {
   font-weight: bold;
+}
+
+/* Responsive */
+
+@media only screen and (min-width: 768px) {
+  main {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  main {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    width: 60%;
+
+  }
 }
