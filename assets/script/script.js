@@ -25,7 +25,7 @@ function bmiResultsCategories(value) {
 }
 
 function bmiCalculate(weight, height) {
-  return weight / (height / 100) ** 2;
+  return (weight / (height / 100) ** 2).toFixed(1);
 }
 
 function takingAllResults(weight, height) {
