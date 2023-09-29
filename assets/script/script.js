@@ -39,13 +39,13 @@ function takingAllResults(weight, height) {
 button.addEventListener('click', e => {
   e.preventDefault();
 
-  if (handleGetFromData().weight === '' && handleGetFromData().height === '') {
-    resultsDetail.textContent = 'Mohon isi salah satunya!';
-    resultsDetail.style.fontWeight = '500';
-    resultsDetail.style.fontSize = '1em';
+  if (handleGetFromData().weight !== '' && handleGetFromData().height !== '') {
+    takingAllResults(handleGetFromData().weight, handleGetFromData().height);
     resultsDetail.style.display = 'inline';
   } else {
-    takingAllResults(handleGetFromData().weight, handleGetFromData().height);
+    resultsDetail.textContent = 'Please fill the form correctly!';
+    resultsDetail.style.fontWeight = '500';
+    resultsDetail.style.fontSize = '1em';
     resultsDetail.style.display = 'inline';
   }
 });
