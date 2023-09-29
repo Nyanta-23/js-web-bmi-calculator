@@ -1,3 +1,5 @@
+'use strict'
+
 const section = document.getElementsByTagName('section')[0];
 const button = document.getElementById('submit');
 const h4 = document.getElementsByTagName('h4')[0];
